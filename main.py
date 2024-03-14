@@ -149,7 +149,6 @@ def process_request(client_connection, method, path, http_version, keep_alive):
     # print(response)
     client_connection.sendall(resp.encode('utf-8') + file_content)
 
-
 def handle_client_connection(client_connection, client_address):
     global active_connections
     with lock:

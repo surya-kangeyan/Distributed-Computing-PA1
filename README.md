@@ -3,6 +3,11 @@
 README
 ======
 
+##### Name: Suryakangeyan kandasamy gowdaman  
+
+##### Assignment: Programming Assignment 1   
+
+##### Course : Distributed computing  
 
 Description:
 ------------
@@ -40,6 +45,13 @@ To demonstrate the server's functionality, after starting the server as describe
     curl http://127.0.0.1:8080/index.html
 
 This command should return the content of the index.html file located in your specified document root directory.
+
+## To test HTTP 1.0
+
+1. Open Firefox browser   
+2. Enter network.http.version  
+3. Change value from 1.1 to 1.0   
+4. Then try http://127.0.0.1:[port]/ on the search bar.
 
 Screenshots:
 ------------

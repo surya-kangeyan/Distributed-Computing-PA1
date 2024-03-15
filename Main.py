@@ -42,8 +42,6 @@ mimeTypes = {
     '.woff': 'font/woff',
     '.jar': 'application/java-archive',
     '.json': 'application/json',
-    '.doc': 'application/msword',
-    '.pdf': 'application/pdf',
     '.xhtml': 'application/xhtml+xml',
     '.zip': 'application/zip',
     '.bin': 'application/octet-stream',
@@ -56,30 +54,6 @@ mimeTypes = {
     '.msi': 'application/octet-stream',
     '.msp': 'application/octet-stream',
     '.msm': 'application/octet-stream',
-    '.docx': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-    '.xlsx': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-    '.pptx': 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
-    '.mid': 'audio/midi',
-    '.midi': 'audio/midi',
-    '.kar': 'audio/midi',
-    '.mp3': 'audio/mpeg',
-    '.ogg': 'audio/ogg',
-    '.m4a': 'audio/x-m4a',
-    '.ra': 'audio/x-realaudio',
-    '.3gpp': 'video/3gpp',
-    '.3gp': 'video/3gpp',
-    '.mp4': 'video/mp4',
-    '.mpeg': 'video/mpeg',
-    '.mpg': 'video/mpeg',
-    '.mov': 'video/quicktime',
-    '.webm': 'video/webm',
-    '.flv': 'video/x-flv',
-    '.m4v': 'video/x-m4v',
-    '.mng': 'video/x-mng',
-    '.asx': 'video/x-ms-asf',
-    '.asf': 'video/x-ms-asf',
-    '.wmv': 'video/x-ms-wmv',
-    '.avi': 'video/x-msvideo',
 }
 
 def getMimeTypeForFile(filePath, is_error=False):
@@ -88,6 +62,8 @@ def getMimeTypeForFile(filePath, is_error=False):
     print("getMimeTypeForFile checking the file path  ---->")
     print(filePath)
     dummyVal, ext = os.path.splitext(filePath)
+    print (f"Appropirate Mime type --> {ext} ")
+
     return mimeTypes.get(ext, "application/octet-stream")
 
 

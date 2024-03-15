@@ -11,10 +11,7 @@ README
 
 Description:
 ------------
-This simple HTTP server is implemented in Python. It is capable of handling multiple simultaneous client connections on separate threads and serving static content from a specified document root directory. The server supports basic GET requests for files with a variety of MIME types. It also handles common HTTP response status codes such as 200 OK, 404 Not Found, 403 Forbidden, and 500 Internal Server Error.
-
-The server is designed to be lightweight and does not require any external dependencies beyond the Python Standard Library. It utilizes multithreading to manage multiple connections, ensuring that the server can serve multiple clients simultaneously without significant performance degradation.
-
+This server is a lightweight, multi-threaded HTTP server that can handle several client connections while serving static material from a defined document root directory. It only allows GET requests and adjusts its behavior dynamically using simple heuristics like adaptive timeout based on server load or recent response times to ensure optimal resource efficiency and responsiveness. When the server receives a request, it parses it, decides the necessary action depending on the HTTP method, retrieves the requested file from the local filesystem if it is available, and creates an HTTP response with the relevant MIME type. It supports common HTTP status codes such as 200 OK for successful requests and 404 Not Found, 403 Forbidden, 405 Method Not Allowed, and 500 Internal Server problem for various problem scenarios.
 
 Instructions for Running the Server:
 ------------------------------------

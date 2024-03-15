@@ -13,6 +13,12 @@ Description:
 ------------
 This server is a lightweight, multi-threaded HTTP server that can handle several client connections while serving static material from a defined document root directory. It only allows GET requests and adjusts its behavior dynamically using simple heuristics like adaptive timeout based on server load or recent response times to ensure optimal resource efficiency and responsiveness. When the server receives a request, it parses it, decides the necessary action depending on the HTTP method, retrieves the requested file from the local filesystem if it is available, and creates an HTTP response with the relevant MIME type. It supports common HTTP status codes such as 200 OK for successful requests and 404 Not Found, 403 Forbidden, 405 Method Not Allowed, and 500 Internal Server problem for various problem scenarios.
 
+List Of Submitted Files:
+------------
+1. Main.py
+2. README.md
+3. PDF (containing all the necessary screenshots and method explanations.)
+
 Instructions for Running the Server:
 ------------------------------------
 1. Ensure Python 3 is installed on your system. This server was developed and tested with Python 3.8
